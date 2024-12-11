@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hmk7qat2jomo7t9d?svg=true)](https://ci.appveyor.com/project/CoolPaK/ahj-dnd)
 
-[Github Pages]()
+[Github Pages](https://coolpak.github.io/ahj_dnd/)
 ---
 
 # Домашнее задание к занятию "6. Работа с файлами, DnD"
