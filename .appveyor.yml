@@ -14,7 +14,7 @@ build: off
 build_script:
   - yarn  build
 test_script:
-   - npm  lint # && npm test
+  - yarn lint # && npm test
 deploy_script: 
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
