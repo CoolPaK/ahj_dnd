@@ -1,0 +1,51 @@
+.list-item {
+  border-radius: 2px;
+  box-shadow: 0 2px #bcc2c9;
+  position: relative;
+  list-style: none;
+}
+
+.card {
+  margin: 3px;
+  border-radius: 10px;
+  background-color: #77d2f1;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  cursor:grab;
+}
+
+
+.del-btn {
+  display: none;
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+.card:hover .del-btn {
+  display: block;
+  cursor: pointer;
+  padding: 0 2px;
+  background: #cecece;
+  border-radius: 2px;
+}
+
+.card-stub {
+  background: #d1d8e0;
+  cursor: grabbing;
+}
+
+.dragged {
+  cursor: grabbing;
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 2px #bcc2c9, 2px 4px 15px 7px #bcc2c9;
+  pointer-events: none;
+  transform: rotate(3deg);
+}
