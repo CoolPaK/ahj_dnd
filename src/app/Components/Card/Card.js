@@ -55,8 +55,6 @@ export default class Card {
   }
 
   deleteCard() {
-    // this.stateService.deleteState(this.parent.title, this.title);
-    // this.parent.renderCards();
     this.element.remove();
     this.stateService.updateAllStates();
   }
@@ -79,7 +77,6 @@ export default class Card {
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
 
-    // this.parent.cardsContainer.replaceChild(this.stub, this.element);
     this.targetList = this.element.closest('.cards');
     this.targetList.replaceChild(this.lastPositionPointer, this.element);
     this.lastPositionPointer.insertAdjacentElement('beforebegin', this.stub);
@@ -98,8 +95,7 @@ export default class Card {
     this.element.classList.remove('dragged');
     this.element.style = '';
 
-    // Временное решение
-    // this.parent.cardsContainer.replaceChild(this.element, this.stub);
+
     if (this.targetList) {
       this.targetList.replaceChild(this.element, this.stub);
     } else {
